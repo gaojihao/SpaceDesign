@@ -6,3 +6,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 xcuserdata
+Pods/
+*.lock
+*.xcworkspace
+*.pbxproj

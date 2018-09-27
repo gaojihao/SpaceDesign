@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24717DE8FA3A30FECCFEBF4D /* Pods_WorkersFreeTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC30D4E9DB33C0D0908DEA7 /* Pods_WorkersFreeTime.framework */; };
 		93522823215C717600F7BA12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93522822215C717600F7BA12 /* AppDelegate.swift */; };
 		9352282A215C717700F7BA12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93522829215C717700F7BA12 /* Assets.xcassets */; };
+		93522838215C7F4800F7BA12 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93522837215C7F4800F7BA12 /* Extensions.swift */; };
+		9352283B215C846300F7BA12 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352283A215C846300F7BA12 /* MainTabBarController.swift */; };
+		9352283D215C861700F7BA12 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352283C215C861700F7BA12 /* BaseNavigationController.swift */; };
+		93522840215C87D800F7BA12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352283F215C87D800F7BA12 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41B74A193185CE8C13717B16 /* Pods-WorkersFreeTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkersFreeTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkersFreeTime/Pods-WorkersFreeTime.debug.xcconfig"; sourceTree = "<group>"; };
 		9352281F215C717600F7BA12 /* WorkersFreeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkersFreeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93522822215C717600F7BA12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93522829215C717700F7BA12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9352282E215C717700F7BA12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93522837215C7F4800F7BA12 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9352283A215C846300F7BA12 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9352283C215C861700F7BA12 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		9352283F215C87D800F7BA12 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ABC30D4E9DB33C0D0908DEA7 /* Pods_WorkersFreeTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkersFreeTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71E3F149A6A1E72F6673E10 /* Pods-WorkersFreeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkersFreeTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkersFreeTime/Pods-WorkersFreeTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24717DE8FA3A30FECCFEBF4D /* Pods_WorkersFreeTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +47,8 @@
 			children = (
 				93522821215C717600F7BA12 /* WorkersFreeTime */,
 				93522820215C717600F7BA12 /* Products */,
+				FB2D40DDB842DD47BB198491 /* Pods */,
+				E09C151160FC74C343858BC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,9 +81,54 @@
 		93522835215C7A0F00F7BA12 /* code */ = {
 			isa = PBXGroup;
 			children = (
+				9352283E215C878C00F7BA12 /* Business */,
+				93522839215C843200F7BA12 /* BaseViewController */,
+				93522836215C7F2300F7BA12 /* Extensions */,
 				93522822215C717600F7BA12 /* AppDelegate.swift */,
 			);
 			path = code;
+			sourceTree = "<group>";
+		};
+		93522836215C7F2300F7BA12 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93522837215C7F4800F7BA12 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93522839215C843200F7BA12 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9352283A215C846300F7BA12 /* MainTabBarController.swift */,
+				9352283C215C861700F7BA12 /* BaseNavigationController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		9352283E215C878C00F7BA12 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				9352283F215C87D800F7BA12 /* HomeViewController.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		E09C151160FC74C343858BC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABC30D4E9DB33C0D0908DEA7 /* Pods_WorkersFreeTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB2D40DDB842DD47BB198491 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41B74A193185CE8C13717B16 /* Pods-WorkersFreeTime.debug.xcconfig */,
+				F71E3F149A6A1E72F6673E10 /* Pods-WorkersFreeTime.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93522831215C717700F7BA12 /* Build configuration list for PBXNativeTarget "WorkersFreeTime" */;
 			buildPhases = (
+				36DA4E70C69C949CBD4BCFF8 /* [CP] Check Pods Manifest.lock */,
 				9352281B215C717600F7BA12 /* Sources */,
 				9352281C215C717600F7BA12 /* Frameworks */,
 				9352281D215C717600F7BA12 /* Resources */,
+				A5FA7100D5E691C37C3C6089 /* [CP] Embed Pods Frameworks */,
+				B0B1F5544F902C36EB390494 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,12 +198,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36DA4E70C69C949CBD4BCFF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorkersFreeTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5FA7100D5E691C37C3C6089 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WorkersFreeTime/Pods-WorkersFreeTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkersFreeTime/Pods-WorkersFreeTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B1F5544F902C36EB390494 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkersFreeTime/Pods-WorkersFreeTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9352281B215C717600F7BA12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93522840215C87D800F7BA12 /* HomeViewController.swift in Sources */,
+				9352283D215C861700F7BA12 /* BaseNavigationController.swift in Sources */,
 				93522823215C717600F7BA12 /* AppDelegate.swift in Sources */,
+				93522838215C7F4800F7BA12 /* Extensions.swift in Sources */,
+				9352283B215C846300F7BA12 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +406,7 @@
 		};
 		93522832215C717700F7BA12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B74A193185CE8C13717B16 /* Pods-WorkersFreeTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -285,6 +427,7 @@
 		};
 		93522833215C717700F7BA12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71E3F149A6A1E72F6673E10 /* Pods-WorkersFreeTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

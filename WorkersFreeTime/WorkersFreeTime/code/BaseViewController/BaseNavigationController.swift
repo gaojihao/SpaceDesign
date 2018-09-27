@@ -1,0 +1,19 @@
+//
+//  BaseNavigationController.swift
+//  WorkersFreeTime
+//
+//  Created by 栗志 on 2018/9/27.
+//  Copyright © 2018年 com.lizhi1026. All rights reserved.
+//
+
+import UIKit
+
+class BaseNavigationController: UINavigationController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+}
