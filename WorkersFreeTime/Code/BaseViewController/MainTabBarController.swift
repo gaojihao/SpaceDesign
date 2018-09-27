@@ -30,7 +30,7 @@ class MainTabBarController: UITabBarController {
     private func buildMainTabBarChildViewController(){
         tabBarControllerAddChildViewController(childVC: HomeViewController(), title: "首页", imageName: "home", selectedImageName: "home_l")
         tabBarControllerAddChildViewController(childVC: HomeViewController(), title: "订单", imageName: "order", selectedImageName: "order_l")
-        tabBarControllerAddChildViewController(childVC: HomeViewController(), title: "我的", imageName: "mine", selectedImageName: "mine_l")
+        tabBarControllerAddChildViewController(childVC: MineViewController(), title: "我的", imageName: "mine", selectedImageName: "mine_l")
     }
     
     private func tabBarControllerAddChildViewController(childVC: UIViewController,

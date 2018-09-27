@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  MineViewController.swift
 //  WorkersFreeTime
 //
 //  Created by 栗志 on 2018/9/27.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class MineViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        self.fp_prefersNavigationBarHidden = true
     }
+
 }

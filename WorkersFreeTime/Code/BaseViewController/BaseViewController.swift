@@ -1,5 +1,5 @@
 //
-//  BaseNavigationController.swift
+//  BaseViewController.swift
 //  WorkersFreeTime
 //
 //  Created by 栗志 on 2018/9/27.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class BaseNavigationController: UINavigationController {
+class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.view.backgroundColor = UIColor.white
     }
 
 }
