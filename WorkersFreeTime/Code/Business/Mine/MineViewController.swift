@@ -9,10 +9,18 @@
 import UIKit
 
 class MineViewController: BaseViewController {
+    
+    var mun:Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.fp_prefersNavigationBarHidden = true
+//        self.fp_prefersNavigationBarHidden = true
+        
+        if let p = self.params {
+            mun = p["mun"] as? Int
+            print(p)
+            print(mun)
+        }
     }
 
 }

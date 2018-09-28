@@ -9,22 +9,14 @@
 import UIKit
 
 fileprivate struct RuntimeKey {
-    static let KEY_willAppearInjectBlockContainer
-        = UnsafeRawPointer(bitPattern: "KEY_willAppearInjectBlockContainer".hashValue)
-    static let KEY_interactivePopDisabled
-        = UnsafeRawPointer(bitPattern: "KEY_interactivePopDisabled".hashValue)
-    static let KEY_prefersNavigationBarHidden
-        = UnsafeRawPointer(bitPattern: "KEY_prefersNavigationBarHidden".hashValue)
-    static let KEY_interactivePopMaxAllowedInitialDistanceToLeftEdge
-        = UnsafeRawPointer(bitPattern: "KEY_interactivePopMaxAllowedInitialDistanceToLeftEdge".hashValue)
-    static let KEY_fullscreenPopGestureRecognizer
-        = UnsafeRawPointer(bitPattern: "KEY_fullscreenPopGestureRecognizer".hashValue)
-    static let KEY_popGestureRecognizerDelegate
-        = UnsafeRawPointer(bitPattern: "KEY_popGestureRecognizerDelegate".hashValue)
-    static let KEY_viewControllerBasedNavigationBarAppearanceEnabled
-        = UnsafeRawPointer(bitPattern: "KEY_viewControllerBasedNavigationBarAppearanceEnabled".hashValue)
-    static let KEY_scrollViewPopGestureRecognizerEnable
-        = UnsafeRawPointer(bitPattern: "KEY_scrollViewPopGestureRecognizerEnable".hashValue)
+    static let KEY_willAppearInjectBlockContainer   = UnsafeRawPointer(bitPattern: "KEY_willAppearInjectBlockContainer".hashValue)
+    static let KEY_interactivePopDisabled           = UnsafeRawPointer(bitPattern: "KEY_interactivePopDisabled".hashValue)
+    static let KEY_prefersNavigationBarHidden       = UnsafeRawPointer(bitPattern: "KEY_prefersNavigationBarHidden".hashValue)
+    static let KEY_fullscreenPopGestureRecognizer   = UnsafeRawPointer(bitPattern: "KEY_fullscreenPopGestureRecognizer".hashValue)
+    static let KEY_popGestureRecognizerDelegate     = UnsafeRawPointer(bitPattern: "KEY_popGestureRecognizerDelegate".hashValue)
+    static let KEY_scrollViewPopGestureRecognizerEnable = UnsafeRawPointer(bitPattern: "KEY_scrollViewPopGestureRecognizerEnable".hashValue)
+    static let KEY_viewControllerBasedNavigationBarAppearanceEnabled = UnsafeRawPointer(bitPattern: "KEY_viewControllerBasedNavigationBarAppearanceEnabled".hashValue)
+    static let KEY_interactivePopMaxAllowedInitialDistanceToLeftEdge = UnsafeRawPointer(bitPattern: "KEY_interactivePopMaxAllowedInitialDistanceToLeftEdge".hashValue)
 }
 
 

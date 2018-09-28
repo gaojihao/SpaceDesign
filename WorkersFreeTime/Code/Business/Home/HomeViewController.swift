@@ -13,4 +13,8 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        UrlSchemeManager.shared.present("MineViewController", navigator: self.navigationController, params: ["mun" : 123])
+    }
 }
