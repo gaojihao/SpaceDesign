@@ -19,7 +19,6 @@ fileprivate struct RuntimeKey {
     static let KEY_interactivePopMaxAllowedInitialDistanceToLeftEdge = UnsafeRawPointer(bitPattern: "KEY_interactivePopMaxAllowedInitialDistanceToLeftEdge".hashValue)
 }
 
-
 open class FullscreenPopGesture{
     open class func configure(){
         UINavigationController.fp_nav_initialize()
@@ -83,7 +82,7 @@ extension UINavigationController {
             return popDelegate
         }
         
-         return delegate
+        return delegate
     }
     
     open class func fp_nav_initialize(){
@@ -255,6 +254,7 @@ extension UIScrollView:UIGestureRecognizerDelegate {
         return false
     }
 }
+
 
 fileprivate extension DispatchQueue {
     
