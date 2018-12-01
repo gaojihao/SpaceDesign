@@ -14,10 +14,16 @@ enum UIViewControllerOpenMethod:Int {
 }
 
 extension UIViewController {
+    func showAlert(title: String?, msg: String = "", handler: ((UIAlertAction) -> Void)? = nil) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: handler)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     private struct AssociatedKeys {
         static var openType:UIViewControllerOpenMethod?
         static var KEY_ViewController_Paramter = UnsafeRawPointer(bitPattern: "KEY_ViewController_Paramter".hashValue)
-        
     }
     
     var openType:UIViewControllerOpenMethod?{
@@ -33,16 +39,16 @@ extension UIViewController {
         }
     }
     
-    var params: [String:Codable]? {
+    var params: [String:Any]? {
         get {
             if let p = objc_getAssociatedObject(self, &AssociatedKeys.KEY_ViewController_Paramter) {
-                return (p as! [String:Codable])
+                return (p as! [String:Any])
             }
             return [:]
         }
         set {
             if let newValue = newValue {
-                objc_setAssociatedObject(self, &AssociatedKeys.KEY_ViewController_Paramter, newValue as [String:Codable]?, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                objc_setAssociatedObject(self, &AssociatedKeys.KEY_ViewController_Paramter, newValue as [String:Any]?, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
         }
     }

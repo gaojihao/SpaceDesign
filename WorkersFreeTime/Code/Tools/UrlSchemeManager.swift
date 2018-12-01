@@ -8,13 +8,15 @@
 
 import UIKit
 
-class UrlSchemeManager {
-    
-    static let shared = UrlSchemeManager()
+let HPScheme = UrlSchemeManager.shared
 
-    func open(_ viewControllerName:String!,navigator:UINavigationController!, params:[String : Codable]?,method:UIViewControllerOpenMethod) {
+
+class UrlSchemeManager {
+    static let shared = UrlSchemeManager()
+    
+    func open(_ viewControllerName:String!,navigator:UINavigationController!, params:[String : Any]?,method:UIViewControllerOpenMethod) {
         
-        let viewController = self.viewController(viewControllerName: viewControllerName, params: params)
+        let viewController = getViewController(viewControllerName: viewControllerName, params: params)
         
         if let vc = viewController {
             vc.openType = method
@@ -30,18 +32,16 @@ class UrlSchemeManager {
         }
     }
     
-    func push(_ viewControllerName:String!,navigator:UINavigationController!, params:[String : Codable]?) {
+    func push(_ viewControllerName:String!,navigator:UINavigationController!, params:[String : Any]?) {
         open(viewControllerName, navigator: navigator, params: params, method: .push)
     }
     
-    
-    func present(_ viewControllerName:String!,navigator:UINavigationController!, params:[String : Codable]?) {
+    func present(_ viewControllerName:String!,navigator:UINavigationController!, params:[String : Any]?) {
         open(viewControllerName, navigator: navigator, params: params, method: .present)
     }
     
-    private func viewController(viewControllerName:String, params:[String : Codable]?) -> UIViewController?{
+    private func getViewController(viewControllerName:String, params:[String : Any]?) -> UIViewController?{
         let classType = NSClassFromString("WorkersFreeTime."+viewControllerName) as? UIViewController.Type
-        
         
         let viewController:UIViewController! = classType!.init()
         
@@ -53,5 +53,4 @@ class UrlSchemeManager {
         }
         
     }
-
 }
