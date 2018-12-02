@@ -13,16 +13,14 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        self.tabBar.backgroundColor = UIColor.white
         tabBarAppearance()
         buildMainTabBarChildViewController()
     }
     
     private func tabBarAppearance() {
         UITabBar.appearance().isTranslucent = false
-//        UITabBar.appearance().layer.borderWidth = 0.0
         UITabBar.appearance().clipsToBounds = true
-        UITabBar.appearance().backgroundColor = UIColor.white
-//        UITabBar.appearance().shadowImage = UIImage()
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.colorFromHex(0x8a8a8a),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12.5)], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.colorFromHex(0x16a515),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12.5)], for: .selected)
     }
