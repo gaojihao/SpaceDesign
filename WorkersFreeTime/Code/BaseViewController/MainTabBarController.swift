@@ -23,14 +23,14 @@ class MainTabBarController: UITabBarController {
         UITabBar.appearance().clipsToBounds = true
         UITabBar.appearance().backgroundColor = UIColor.white
 //        UITabBar.appearance().shadowImage = UIImage()
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.colorFromHex(0x999999),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12.5)], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.colorFromHex(0x000000),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12.5)], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.colorFromHex(0x8a8a8a),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12.5)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.colorFromHex(0x16a515),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12.5)], for: .selected)
     }
     
     private func buildMainTabBarChildViewController(){
-        tabBarControllerAddChildViewController(childVC: HomeViewController(), title: "首页", imageName: "home", selectedImageName: "home_l")
-        tabBarControllerAddChildViewController(childVC: HomeViewController(), title: "订单", imageName: "order", selectedImageName: "order_l")
-        tabBarControllerAddChildViewController(childVC: MineViewController(), title: "我的", imageName: "mine", selectedImageName: "mine_l")
+        tabBarControllerAddChildViewController(childVC: HomeViewController(), title: "首页", imageName: "tab_home", selectedImageName: "tab_home_active")
+        tabBarControllerAddChildViewController(childVC: DesignViewController(), title: "设计", imageName: "tab_create", selectedImageName: "tab_create_active")
+        tabBarControllerAddChildViewController(childVC: MineViewController(), title: "我的", imageName: "tab_me", selectedImageName: "tab_me_active")
     }
     
     private func tabBarControllerAddChildViewController(childVC: UIViewController,
